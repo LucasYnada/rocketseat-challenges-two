@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  font-family: "Spartan";
+  font-size: 14px;
+}
+
+.left-container {
+  width: 50%;
+  padding: 50px 30px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.logo-container img {
+  margin: 10px 15px;
+  width: 50px;
+}
+
+.right-container {
+  width: 50%;
+  background-image: url("./imgs/read_news.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -520px;
+  z-index: 0;
+}
+.logo-container img {
+  width: 398px;
+  height: 94px;
+}
+
+.news-container {
+  margin: 150px 34px;
+}
+
+.news-info {
+  margin: 90px 0;
+}
+
+.send span {
+  display: flex;
+  margin: 45px 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.send svg {
+  filter: invert(40%) sepia(57%) saturate(5099%) hue-rotate(241deg)
+    brightness(97%) contrast(85%);
+  width: 20px;
+  height: 20px;
+}
+
+.news-add input::placeholder {
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: content-box;
+}
+
+.otherinput input {
+  height: 48px;
+  width: 1060px;
+  border: none;
+  border-left: 5px solid rgb(1, 255, 1);
+  position: relative;
+  outline: none;
+}
+
+.otherinput button {
+  width: 48px;
+  height: 48px;
+  background-color: blueviolet;
+  border: none;
+}
+
+.otherinput {
+  display: flex;
+  margin: 25px 0;
+  width: 1500px;
+  z-index: 1;
+}
+
+.sendbutton {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(298deg)
+    brightness(100%) contrast(102%);
+}
+
+.othernews img {
+  filter: invert(85%) sepia(72%) saturate(0%) hue-rotate(164deg)
+    brightness(111%) contrast(101%);
+}
+
+.news-info h1 {
+  font-family: "Work Sans", sans-serif;
+  margin: 10px 0;
+}
+
+.news-info h1 {
+  color: var(--title-color);
+  margin: 10px 0;
+}
+
+.news-info h2 {
+  margin-bottom: 10px;
+}
+.news-info p {
+  color: var(--form-color);
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.news-add span {
+  color: var(--form-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 90px 0;
+}
+
+.send span {
+  font-size: 20px;
+  color: var(--bg-button-color);
+}
